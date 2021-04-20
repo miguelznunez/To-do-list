@@ -37,6 +37,7 @@ header{
 .user-input{
   margin-top: 2px;
   width: 350px;
+  text-align:center;
 }
 
 .user-input input{
