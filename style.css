@@ -73,6 +73,7 @@ header{
 }
 
 .user-input button:hover{
+  color: white;
   background-color: transparent;
 }
 
