@@ -13,21 +13,17 @@ body{
 }
 
 .container{
-  display: flex;
-  width: 95%;
+  width: 1280px;
   margin: auto;
-}
-
-header{
-  background: transparent;
 }
 
 .nav{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 25px 0;
+  min-height: 70px;
+  padding: 0 20px;
 }
 
 .nav h2{
@@ -37,11 +33,11 @@ header{
 .user-input{
   margin-top: 2px;
   width: 350px;
-  text-align:center;
+  text-align: center;
 }
 
 .user-input input{
-  width: 80%;
+  width: 75%;
   outline: none;
   padding: 8px;
   border: 1px solid lightgray;
@@ -73,8 +69,8 @@ header{
 }
 
 .user-input button:hover{
-  color: white;
   background-color: transparent;
+  color: white;
 }
 
 .to-do-list{
@@ -112,6 +108,12 @@ header{
   margin: 0 5px;
 }
 
+@media(max-width:1280px){
+  .container{
+    width: 95%;
+  }
+}
+
 @media(max-width:768px){
   .nav{
     align-items: center;
@@ -120,6 +122,10 @@ header{
 
   .nav h2{
     margin: 10px 0;
+  }
+
+  .user-input{
+    width: 100%;
   }
 
   .to-do-list{
@@ -138,11 +144,3 @@ header{
     width: 60%;
   }
 }
-
-
-
-
-
-
-
-
