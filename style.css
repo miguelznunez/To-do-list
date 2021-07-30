@@ -114,6 +114,8 @@ body{
   .container{width: 95%;}
   
   #header{
+    padding: 20px;
+    gap: 10px;
     align-items: center;
     flex-direction: column;
   }
