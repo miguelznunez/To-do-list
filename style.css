@@ -17,7 +17,7 @@ body{
   margin: auto;
 }
 
-.nav{
+#header{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,17 +26,15 @@ body{
   padding: 0 20px;
 }
 
-.nav h2{
-  font-size: 2rem;
-}
+#header h2{font-size: 2rem;}
 
-.user-input{
+.user_input{
   margin-top: 2px;
   width: 350px;
   text-align: center;
 }
 
-.user-input input{
+.user_input input{
   width: 75%;
   outline: none;
   padding: 8px;
@@ -50,12 +48,12 @@ body{
   transition: all 0.30s ease-in-out;
 }
 
-.user-input input:focus{
+.user_input input:focus{
   box-shadow: 0 0 5px #E22865;
   border: 1px solid #E22865;
 }
 
-.user-input button{
+.user_input button{
   cursor: pointer;
   padding: 8px;
   width: fit-content;
@@ -73,7 +71,7 @@ body{
   color: white;
 }
 
-.to-do-list{
+#to_do_list{
   width: 500px;
   margin: auto;
 }
@@ -109,38 +107,28 @@ body{
 }
 
 @media(max-width:1280px){
-  .container{
-    width: 95%;
-  }
+  .container{width: 100%;}
 }
 
 @media(max-width:768px){
-  .nav{
+  .container{width: 95%;}
+  
+  #header{
     align-items: center;
     flex-direction: column;
   }
 
-  .nav h2{
-    margin: 10px 0;
-  }
+  #header h2{margin: 10px 0;}
 
-  .user-input{
-    width: 100%;
-  }
+  .user_input{width: 100%;}
 
-  .to-do-list{
-    width: 100%;
-  }
+  #to_do_list{width: 100%;}
 }
 
 @media(max-width:480px){
-  .user-input input{
-    width: 74%;
-  }
+  .user_input input{width: 74%;}
 }
 
 @media(max-width:320px){
-  .user-input input{
-    width: 60%;
-  }
+  .user_input input{width: 60%;}
 }
